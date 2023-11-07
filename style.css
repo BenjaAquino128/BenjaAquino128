@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*HEADER*/
+header {
+    background-color: rgb(0, 110, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(243, 247, 250);
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+/*LOGOTIPOS Y ENLACES*/
+.logo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family:'Roboto', sans-serif;
+    color: rgb(243, 247, 250);
+}
+
+.menu li{
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.menu li:hover{
+    background-color: rgba(0, 0, 0, 0.136);
+    padding: 7px;
+    transition-duration: 10ms;
+    border-radius: 10px;
+}
+
+
+/*CONTENIDO*/
+.presentation{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 475px;
+    margin: auto;
+    font-size: 35px;
+}
+
+.skills{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    padding: 475px;
+    font-size: 35px;
+    color: white;
+}
+
+.projects{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 475px;
+    font-size: 35px;
+}
+
+.random{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:cornflowerblue;
+    padding: 455px;
+}
+
+
+
+
