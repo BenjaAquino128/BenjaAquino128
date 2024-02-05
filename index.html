@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benjamin Aquino</title>
     <link rel="stylesheet" href="style.css">
+    <script src= "index.js"></script>
 </head>
 
 <header>
-    <div class="logo">Benjamin Aquino.Dev</div>
+    <div class="logo">Benjamin Aquino</div>
     <nav>
         <ul class="menu">
             <li><a href="#">Inicio</a></li>
@@ -20,17 +21,37 @@
 </header>
 
 <body class="content">
-    <div class="presentation">CALA</div>
-    <div class="skills">BOCA</div>
-    <div class="projects">PUTA</div>
-    <div class="random">
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/oNLfVqzvBDI?si=hmWz33eiEhdiafCu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    <div class="presentation">Presentation</div>
+    <div class="skills">Skills</div>
+    <div class="projects">My Projects</div>
+    <img src="/imagens/laptop.png" class="fondo">
 </body>
 
 
-<footer></footer>
+<footer>
+    <form  class="form">
+        <div class="form_container">
+            <h2 class="titulo">Contacto</h2>
+            <!-- Campo de Nombre -->
+            <label>Nombre:</label>
+            <input type="text" class="form_input" required>
+    
+            <!-- Campo de Correo Electrónico -->
+            <label>Correo Electrónico:</label>
+            <input type="email" class="form_input" required>
+    
+            <!-- Campo de Mensaje -->
+            <label >Mensaje:</label>
+            <textarea class="form_input_message" rows="4" required></textarea>
+    
+            <!-- Botón de Enviar -->
+            <button class="myButton" type="submit">Enviar</button>
+       </div> 
+    </form>
+</footer>
+
 
 
 
 </html>
+
