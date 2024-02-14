@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:wght@600&family=Montserrat:wght@700&family=Roboto:ital,wght@0,700;1,700&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -8,96 +6,207 @@
 
 
 /*HEADER*/
-header {
-    background-color: rgb(0, 106, 244);
+nav {
+    background-color: rgb(0, 0, 0, 0.70);
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(243, 247, 250);
-    padding: 25px;
-    position: fixed;
+    padding: 20px 0px 0px 20px;
     width: 100%;
     z-index: 2;
+    font-family: sans-serif;
 }
 
-/*LOGOTIPOS Y ENLACES*/
-.logo {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-}
-
-.menu a {
+nav a {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    color: rgb(243, 247, 250);
+    color: #ffffff;
 }
 
-.menu li {
-    display: inline;
-    list-style: none;
-    margin-left: 10px;
-    font-size: 18px;
+nav a::hover {
+    color: blueviolet;
 }
 
-.menu li:hover {
-    background-color: rgba(0, 0, 0, 0.136);
-    padding: 1px;
-    transition-duration: 10ms;
-    border-radius: 10px;
+ul li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-weight: 1000;
 }
 
 
 /*CONTENIDO*/
-
-.titulo{
-    font-size: 25px;
+@font-face {
+    font-family: letra;
+    src: url(/FasterStroker.otf);
 }
 
-div h1{
-    color: rgb(255, 255, 255);
-    position: relative;
-    z-index: -1;
-    font-size: 22px;
+
+body {
+    background-image: url(imagens/escritoriogaming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.txt1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+    font-weight: 300;
+    font-family: letra;
+    font-size: 75px;
+    color: #ffffff;
+}
+
+.txt2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.linea {
+    background-color: rgba(14, 43, 173, 0.856);
+    height: 2px;
+    width: 500px;
+    margin: auto;
 }
 
 .presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    padding: 475px;
-    margin: auto;
+    background-color: rgb(0, 0, 0, 0.70);
+    padding: 460px;
     font-size: 35px;
-    opacity: 80%;
 }
 
-.skills {
+.linea2 {
+    background-color: rgb(20, 20, 20);
+    height: 5px;
+    width: 100%;
+}
+
+.sobre-mi {
+
+    background-color: rgb(255, 255, 255);
+    padding: 440px;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+
+.foto {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: cornflowerblue;
+    justify-content: center;
+    border: 2.5px solid black;
+    float: top;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px;
+}
+
+.descripcion {
+    background-color: white;
+    border: 1px none;
+    box-shadow: 10px 10px;
+    margin: auto;
+    position: static;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-projects {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.543);
     padding: 475px;
-    opacity: 90%;
     font-size: 35px;
     color: white;
-}
-
-.projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    padding: 475px;
-    font-size: 35px;
 }
 
 
 /*FOOTER*/
 footer {
+    display: block;
+    margin: auto;
+    background-color: rgba(16, 12, 12, 0.819);
+    padding: 250px;
+}
+
+.form {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(77, 114, 184);
-    padding: 120px;
+    width: 90%;
+    max-width: 800px;
+    height: 600px;
+    border-radius: 1em;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    padding: 20px 30px;
+    margin: auto;
+    background-color: rgba(10, 10, 10, 0.841);
+    color: #ffffff;
 }
 
+.form_container {
+    width: 100%;
+    display: grid;
+    row-gap: 12px;
+    grid-auto-columns: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.form_input {
+    color: white;
+    width: 450px;
+    font-family: inherit;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 2.5px solid rgb(255, 255, 255);
+}
+
+.form_input_message {
+    color: white;
+    font-family: inherit;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 5px solid rgb(255, 255, 255);
+
+}
+
+.myButton {
+    background-color: #48b810;
+    border-radius: 10px;
+    border-style: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 13px 32px;
+}
+
+.myButton:hover {
+    background-color: #42a610;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/*SECCION RESPONSIVE*/
+@media (max-width: 412px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+}
