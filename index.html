@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Aquino</title>
-    <link rel="stylesheet" href="style.css">
-    <script src= "index.js"></script>
+    <title>Portafolio Web</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<header>
-    <div class="logo">MyPortfolio</div>
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
-
 <body class="content">
-    <div class="presentation">
-        <h1 class="titulo">Benjamin Aquino <br class="subtitulo">Backend Developer</br></h1>
-    </div>
-    <div class="skills">Skills</div>
-    <div class="projects">
-        <h1>My Projects</h1>
-    </div>
+    <header>
+        <nav class="nav">
+            <h1 class="logo" href="#inicio">Portafolio</h1>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mi</a></li>
+                <li><a href="#my-projects">Mis Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="presentation" id="inicio">
+            <div class="txt1">Backend Developer</div>
+            <div class="linea"></div>
+            <div class="txt2">Estudiante de Ingenieria Informatica</div>
+        </div>
+
+        <div class="sobre-mi">
+            <div>
+                <img src="imagens/momo xd.jpg" class="foto" width="400px" height="400px">
+            </div>
+            <div>
+                <p class="descripcion">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem accusantium, totam architecto,
+                    omnis recusandae maxime explicabo ea inventore, aperiam vel et repellat.
+                    Molestiae cupiditate praesentium tempora ab nesciunt facilis consequatur.
+                </p>
+            </div>
+        </div>
+
+        <div class="linea2"></div>
+
+        <div class="my-projects" id="my-projects">
+            <h1>My Projects</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis, quisquam incidunt perspiciatis voluptatem temporibus aliquam,
+            culpa ad odit tempora sapiente error unde a molestias suscipit blanditiis rerum eius necessitatibus ipsum?
+        </div>
+        <div class="item4" id="contacto"></div>
+
+    </main>
+
+    <footer>
+        <form class="form">
+            <div class="form_container">
+                <h2 class="titulo">Contacto</h2>
+                <!-- Campo de Nombre -->
+                <label>Nombre:</label>
+                <input type="text" class="form_input" required>
+    
+                <!-- Campo de Correo Electrónico -->
+                <label>Correo Electrónico:</label>
+                <input type="email" class="form_input" required>
+    
+                <!-- Campo de Numero Telefonico -->
+                <label>Numero de Telefono</label>
+                <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" required>
+    
+                <!-- Campo de Mensaje -->
+                <label>Mensaje:</label>
+                <textarea class="form_input_message" rows="4" required></textarea>
+    
+                <!-- Botón de Enviar -->
+                <button class="myButton" type="submit">Enviar</button>
+            </div>
+        </form>
+    </footer>
+    
 </body>
-
-
-<footer>
-    <form  class="form">
-        <div class="form_container">
-            <h2 class="contact">Contacto</h2>
-            <!-- Campo de Nombre -->
-            <label>Nombre:</label>
-            <input type="text" class="form_input" required>
-    
-            <!-- Campo de Correo Electrónico -->
-            <label>Correo Electrónico:</label>
-            <input type="email" class="form_input" required>
-    
-            <!-- Campo de Mensaje -->
-            <label >Mensaje:</label>
-            <textarea class="form_input_message" rows="4" required></textarea>
-
-            <!-- Botón de Enviar -->
-            <button class="myButton" type="submit">Enviar</button>
-       </div> 
-    </form>
-</footer>
-
-
-
-
 </html>
 
 
