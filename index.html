@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Web</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="content">
@@ -22,21 +22,20 @@
     </header>
     <main>
         <div class="presentation" id="inicio">
-            <div class="txt1">Backend Developer</div>
+            <div class="txt1">I'm Benjamin Aquino</div>
             <div class="linea"></div>
-            <div class="txt2">Estudiante de Ingenieria Informatica</div>
+            <div class="txt2">Backend Developer</div>
         </div>
 
         <div class="sobre-mi">
-            <div>
-                <img src="imagens/momo xd.jpg" class="foto" width="400px" height="400px">
+            <div class="descripcion-sobre-mi">
+                <p>
+                    I'm Benjamin Aquino
+                    <br>Student Engineer Informatic
+                </p>
             </div>
             <div>
-                <p class="descripcion">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem accusantium, totam architecto,
-                    omnis recusandae maxime explicabo ea inventore, aperiam vel et repellat.
-                    Molestiae cupiditate praesentium tempora ab nesciunt facilis consequatur.
-                </p>
+                <img src="imagens/momo xd.jpg" alt="imagen de ejemplo" class="foto">
             </div>
         </div>
 
@@ -59,26 +58,25 @@
                 <!-- Campo de Nombre -->
                 <label>Nombre:</label>
                 <input type="text" class="form_input" required>
-    
+
                 <!-- Campo de Correo Electrónico -->
                 <label>Correo Electrónico:</label>
                 <input type="email" class="form_input" required>
-    
+
                 <!-- Campo de Numero Telefonico -->
                 <label>Numero de Telefono</label>
-                <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####" required>
-    
+                <input type="text" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form_input" required>
+
                 <!-- Campo de Mensaje -->
                 <label>Mensaje:</label>
                 <textarea class="form_input_message" rows="4" required></textarea>
-    
+
                 <!-- Botón de Enviar -->
                 <button class="myButton" type="submit">Enviar</button>
             </div>
         </form>
     </footer>
-    
+
 </body>
+
 </html>
-
-
